@@ -6,8 +6,6 @@ mail: junqi.gao@shuyun.com
 Created Time: 三  7/22 21:22:48 2015
 '''
 
-VERSION = "0.2"
-
 import time
 import logging
 import json

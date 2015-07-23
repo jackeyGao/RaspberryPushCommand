@@ -7,7 +7,9 @@ Created Time: 2015年07月13日 星期一 13时02分21秒
 '''
 
 from setuptools import setup, find_packages
-from server import VERSION as version, __doc__ as description
+
+version = "0.2"
+description = "https://github.com/jackeyGao/RaspberryPushCommand"
 
 
 def fread(filepath):
