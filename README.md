@@ -4,7 +4,7 @@
 通过pushbullet在你的树莓派上执行一些命令， 这些命令可以是树莓派支持的任何命令。
 常见场景, 你不知道树莓派的ip， 可以执行ifconfig 然后稍等一回树莓派就会回复ifconfig 执行结果.
 
-优点:
+**优点:**
 
 * 不知道ip时不用打开显示器
 * 只要有网络就可以执行命令
@@ -19,8 +19,8 @@
 
 ## ScreenCaptures
 
-![](https://github.com/jackeyGao/cmdstats/raw/master/screenCapture-1.jpg)
-![](https://github.com/jackeyGao/cmdstats/raw/master/screenCapture-2.jpg)
+![](https://github.com/jackeyGao/RaspberryPushCommand/raw/master/ScreenCaptures/ScreenCapture-1.jpg)
+![](https://github.com/jackeyGao/RaspberryPushCommand/raw/master/ScreenCaptures/ScreenCapture-2.jpg)
 
 
 
