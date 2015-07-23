@@ -6,6 +6,8 @@ mail: junqi.gao@shuyun.com
 Created Time: 三  7/22 21:22:48 2015
 '''
 
+VERSION = "0.2"
+
 import time
 import logging
 import json
@@ -89,7 +91,8 @@ def on_push(data, listener):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-k", "--key", type=str, help="The pushbullet api key.")
+    parser.add_argument("-k", "--key", type=str, 
+            required=True, help="The pushbullet api key.")
     args = parser.parse_args()
     try:
         pb = Pushbullet(args.key)
@@ -100,5 +103,3 @@ def main():
     except KeyboardInterrupt:
         s.close()
 
-if __name__ == '__main__':
-    main()

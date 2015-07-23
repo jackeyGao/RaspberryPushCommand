@@ -17,6 +17,22 @@
 * 树莓派需要联网
 * 不能替代shell
 
+## Install
+
+`pip install git+https://github.com/jackeyGao/RaspberryPushCommand`
+
+## Usage
+
+
+**start**
+
+`listener -k <PushBullet API-KEY>`
+
+**exit**
+
+`ps -ef | grep listener | awk '{print $2}' | xargs -n 1 kill `
+
+
 ## ScreenCaptures
 
 ![](https://github.com/jackeyGao/RaspberryPushCommand/raw/master/ScreenCaptures/ScreenCapture-1.jpg)
