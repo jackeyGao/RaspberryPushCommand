@@ -19,7 +19,13 @@
 
 ## Install
 
-`pip install git+https://github.com/jackeyGao/RaspberryPushCommand`
+```
+git clone https://github.com/jackeyGao/RaspberryPushCommand
+cd RaspberryPushCommand/
+sudo pip install -r requirements.txt
+sudo python setup.py install
+
+```
 
 ## Usage
 
