@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Raspberrypushcommand : 通过PushBullet 在树莓派执行命令并且返回输出">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Raspberrypushcommand</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jackeyGao/RaspberryPushCommand">View on GitHub</a>
+
+          <h1 id="project_title">Raspberrypushcommand</h1>
+          <h2 id="project_tagline">通过PushBullet 在树莓派执行命令并且返回输出</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jackeyGao/RaspberryPushCommand/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jackeyGao/RaspberryPushCommand/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a id="raspberrypushcommand" class="anchor" href="#raspberrypushcommand" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>RaspberryPushCommand</h2>
+
+<p>通过pushbullet在你的树莓派上执行一些命令， 这些命令可以是树莓派支持的任何命令。
+常见场景, 你不知道树莓派的ip， 可以执行ifconfig 然后稍等一回树莓派就会回复ifconfig 执行结果.</p>
+
+<p><strong>优点:</strong></p>
+
+<ul>
+<li>不知道ip时不用打开显示器</li>
+<li>只要有网络就可以执行命令</li>
+<li>无需在同一个网络操作</li>
+<li>查看树莓派的任何状态</li>
+<li>模拟shell</li>
+</ul>
+
+<p><strong>缺点</strong></p>
+
+<ul>
+<li>树莓派需要联网</li>
+<li>不能替代shell</li>
+</ul>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
+
+<pre><code>git clone https://github.com/jackeyGao/RaspberryPushCommand
+cd RaspberryPushCommand/
+sudo pip install -r requirements.txt
+sudo python setup.py install
+
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p><strong>start</strong></p>
+
+<p><code>listener -k &lt;PushBullet API-KEY&gt;</code></p>
+
+<p><strong>exit</strong></p>
+
+<p><code>ps -ef | grep listener | awk '{print $2}' | xargs -n 1 kill</code></p>
+
+<h2>
+<a id="screencaptures" class="anchor" href="#screencaptures" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ScreenCaptures</h2>
+
+<p><img src="https://github.com/jackeyGao/RaspberryPushCommand/raw/master/ScreenCaptures/ScreenCapture-1.jpg" alt="">
+<img src="https://github.com/jackeyGao/RaspberryPushCommand/raw/master/ScreenCaptures/ScreenCapture-2.jpg" alt=""></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>The MIT License (MIT)</p>
+
+<p>Copyright (c) 2015 JackeyGao</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Raspberrypushcommand maintained by <a href="https://github.com/jackeyGao">jackeyGao</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
